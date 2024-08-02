@@ -53,19 +53,7 @@ const createCustomer = async (customerFromPostman: Customer) => {
         return customer.save()
         
     }
-    
-    
-
-
-
-
-
-
-
-
-
-
-
+   
 const getCustomer = async(customerId :any)=>{
     const customer = await Customer.findOne({where:{id : customerId}})
 
